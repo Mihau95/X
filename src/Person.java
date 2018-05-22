@@ -1,13 +1,27 @@
 class Person {
-    String firstName = null;
+    String firstName;
     String lastName;
-    String city;
     int age;
+    String city;
 
-//    Person(String fn, String ln, String c, int a);
-//    firstName = fn;
-//    lastName = ln;
-//    city = c;
-//    age = a;
+    Person(String fn, String ln, int a, String c) {
+        firstName = fn;
+        lastName = ln;
+        age = a;
+        city = c;
 
+    }
+
+    void showInfo() {
+        System.out.println(firstName + " " + lastName + " " + age + " " + city + " ");
+    }
+
+
+    void increaseAge() {
+        age++;
+    }
+
+    void changeAge(int change) {
+        age = age + change;
+    }
 }
